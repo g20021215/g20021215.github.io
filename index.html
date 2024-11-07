@@ -1,9 +1,9 @@
 <h1>hello! This is the personal page of users g20021215</h1>
-<h2> The current time is <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="utf-8">
-<title>动态时钟</title>
+<title>EECS6893 Group Project</title>
 <style>
 #clock{
     margin:100px auto;
@@ -26,10 +26,10 @@ function showTime(clock){
     var minu = now.getMinutes();
     var second = now.getSeconds();
     month = month+1;
-    var arr_work = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+    var arr_work = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
     var week = arr_work[ now.getDay()];
-    var time = year+"年"+month+"月"+day+"日 "+ week+" "+hour+":"+minu+":"+second;
-    clock.innerHTML="当前时间: "+time;
+    var time = year+"/"+month+"/"+day+"/"+ week+" "+hour+":"+minu+":"+second;
+    clock.innerHTML="Current time: "+time;
 }
 window.onload = function(){
     var clock = document.getElementById("clock");
