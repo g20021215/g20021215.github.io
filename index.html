@@ -28,7 +28,7 @@ function showTime(clock){
     month = month+1;
     var arr_work = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
     var week = arr_work[ now.getDay()];
-    var time = "Eastern Standard Time，EST" + year+"/"+month+"/"+day+"/"+ week+" "+hour+":"+minu+":"+second;
+    var time = "EST " + year+"/"+month+"/"+day+"/ "+ week+" "+hour+":"+minu+":"+second;
     clock.innerHTML="Current time: "+time;
 }
 window.onload = function(){
