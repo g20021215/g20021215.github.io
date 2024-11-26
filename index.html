@@ -44,3 +44,44 @@ window.onload = function(){
 </html>
 
 </h2>
+<h3><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Location</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visitor Location</h1>
+  <div id="map"></div>
+  <script>
+    // 获取IP和地理信息
+    fetch('https://ip-api.com/json/')
+      .then(response => response.json())
+      .then(data => {
+        const { lat, lon } = data;
+        const map = L.map('map').setView([lat, lon], 13);
+
+        // 添加地图图层
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 添加标记
+        L.marker([lat, lon]).addTo(map)
+          .bindPopup(`You are here: ${data.city}, ${data.country}`)
+          .openPopup();
+      })
+      .catch(err => console.error(err));
+  </script>
+</body>
+</html>
+</h3>
