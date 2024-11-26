@@ -1,44 +1,37 @@
-<h1>hello! This is the personal page of user g20021215</h1>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>EECS6893 Group Project</title>
-<style>
-#clock{
-    margin:100px auto;
-    border: 5px double green;
-    width: 400px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    font: bold;
-    color: red;
-}
-</style>
-<script>
-function showTime(clock){
-    var now = new Date();
-    var year = now.getFullYear();
-    var month= now.getMonth();
-    var day = now.getDate();
-    var hour = now.getHours();
-    var minu = now.getMinutes();
-    var second = now.getSeconds();
-    month = month+1;
-    var arr_work = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-    var week = arr_work[ now.getDay()];
-    var time = "EST " + year+"/"+month+"/"+day+"/ "+ week+" "+hour+":"+minu+":"+second;
-    clock.innerHTML="Current time: "+time;
-}
-window.onload = function(){
-    var clock = document.getElementById("clock");
-    window.setInterval("showTime(clock)",1000);
-  
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id ="clock"></div>
+  <!-- Header Section -->
+  <header>
+    <h1>My Website</h1>
+    <button id="menu-button" aria-label="Open Menu">Menu</button>
+  </header>
+
+  <!-- Menu Overlay -->
+  <div id="menu-overlay" class="hidden">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="close-menu" aria-label="Close Menu">Close</button>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome to My Website</h2>
+    <p>This is the homepage content.</p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
