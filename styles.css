@@ -1,7 +1,7 @@
 /* Style for the map container */
 #map {
   height: 300px; /* Set map height */
-  width: 100%;   /* Set map width to full screen */
+  width: 70%;   /* Set map width to full screen */
 }
 
 /* Style for the page title */
