@@ -1,3 +1,4 @@
+# Webpage Structure:
 my-github-pages/
 
 ├── index.html        # Main homepage
@@ -11,3 +12,6 @@ my-github-pages/
 │   ├── styles.css
 
 │   ├── script.js
+
+# Data Preprocessing:
+The Data Source:
