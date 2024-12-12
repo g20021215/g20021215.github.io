@@ -5,6 +5,20 @@ body {
   padding: 0;
 }
 
+/* Background container */
+.background {
+    background-image: url('https://raw.githubusercontent.com/g20021215/g20021215.github.io/refs/heads/main/web_files/index_background.webp'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Make the container height equal to the viewport height */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
 header {
   display: flex;
   justify-content: space-between;
