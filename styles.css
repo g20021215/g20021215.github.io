@@ -29,7 +29,7 @@ header h1 a {
 
 #menu-button {
   position: fixed; /* 固定在视口 */
-  top: 40px; /* 距离视口顶部 20px */
+  top: 30px; /* 距离视口顶部 20px */
   right: 30px; /* 距离视口右侧 20px */
   background-color: #444;
   color: white;
