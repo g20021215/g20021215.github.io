@@ -90,21 +90,17 @@ header h1 a {
 
 /* Main Content */
 main {
-  padding: 0 20px;
+  padding: 100px 20px 0; /* Ensure it doesn't overlap with the header */
   text-align: center;
   position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* CVD Title */
 #cvd-title {
   font-family: Garamond, sans-serif;
   font-size: 72px;
-  margin-bottom: 20px; /* Add space below the title */
+  margin-bottom: 30px;
 }
 
 /* Description Box */
@@ -112,12 +108,10 @@ main {
   width: 60%; /* Restrict width */
   max-width: 800px;
   aspect-ratio: 2 / 1; /* Maintain 2:1 ratio */
+  margin: 0 auto; /* Center horizontally */
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center; /* Center-align text */
   background-color: #f9f9f9; /* Add light background for better contrast */
 }
