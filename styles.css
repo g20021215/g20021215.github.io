@@ -28,20 +28,24 @@ header h1 a {
 }
 
 #menu-button {
+  position: fixed; /* 固定在视口 */
+  top: 10px; /* 距离视口顶部 20px */
+  right: 30px; /* 距离视口右侧 20px */
   background-color: #444;
   color: white;
   border: none;
-  padding: 10px 15px; /* 调整padding，适配小屏幕 */
+  padding: 10px 15px;
   cursor: pointer;
   font-size: 1rem;
-  max-width: 100px; /* 确保按钮不会超出边界 */
+  max-width: 100px;
   text-align: center;
-  overflow: hidden; /* 防止内容溢出 */
+  overflow: hidden;
 }
 
 #menu-button:hover {
   background-color: #555;
 }
+
 
 /* Menu Overlay */
 #menu-overlay {
