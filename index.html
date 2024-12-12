@@ -5,6 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EECS6893 Team 18</title>
   <link rel="stylesheet" href="styles.css">
+      <style>
+          /* 背景样式 */
+        .background {
+            background-image: url('./web_files/index_background.jpg'); /* 替换为实际背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #000;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* 段落样式 */
+        p {
+            font-size: 1.2rem;
+            margin: 20px 10%;
+            line-height: 1.6;
+        }
+
+        /* 渐变效果 */
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%);
+            z-index: 1;
+        }
+
+        /* 内容容器确保文字浮在渐变之上 */
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -28,8 +74,10 @@
 
   <!-- Main Content -->
   <main>
-    <h2>Welcome to My Website</h2>
-    <p>This is the homepage content.</p>
+    <h2>CVD</h2>
+    <p>
+      For more than 40 years, the Harvard community has been working to understand the disease and treat those affected. Now, with life-changing treatments available and potential cures on the horizon, we may be entering a new phase of the epidemic.
+    </p>
   </main>
 
   <script src="script.js"></script>
