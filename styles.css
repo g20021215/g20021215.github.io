@@ -3,8 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Header Section */
@@ -19,7 +19,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 a {
@@ -41,7 +40,7 @@ header h1 a {
   background-color: #555;
 }
 
-/* Menu Overlay Styles */
+/* Menu Overlay */
 #menu-overlay {
   position: fixed;
   top: 0;
@@ -92,29 +91,24 @@ header h1 a {
 main {
   padding: 100px 20px 0; /* Ensure it doesn't overlap with the header */
   text-align: center;
-  position: relative;
-  height: 100vh;
 }
 
-/* CVD Title */
 #cvd-title {
   font-family: Garamond, sans-serif;
   font-size: 72px;
-  margin-bottom: 20px; /* Ensure space below the title */
-  position: relative;
+  margin-bottom: 30px;
 }
 
-/* Description Box */
 #description-box {
-  width: 60%; /* Restrict width */
+  width: 60%;
   max-width: 800px;
   aspect-ratio: 2 / 1; /* Maintain 2:1 ratio */
-  margin: 20px auto; /* Center the box */
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center-align text */
-  background-color: #f9f9f9; /* Add light background for better contrast */
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 #description-box p {
@@ -140,7 +134,7 @@ main {
   }
 
   #description-box {
-    width: 80%; /* Adjust width for smaller screens */
+    width: 80%;
   }
 
   #description-box p {
