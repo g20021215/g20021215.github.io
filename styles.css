@@ -100,7 +100,8 @@ main {
 #cvd-title {
   font-family: Garamond, sans-serif;
   font-size: 72px;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Ensure space below the title */
+  position: relative;
 }
 
 /* Description Box */
@@ -108,7 +109,7 @@ main {
   width: 60%; /* Restrict width */
   max-width: 800px;
   aspect-ratio: 2 / 1; /* Maintain 2:1 ratio */
-  margin: 0 auto; /* Center horizontally */
+  margin: 20px auto; /* Center the box */
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
