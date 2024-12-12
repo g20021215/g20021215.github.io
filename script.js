@@ -12,3 +12,4 @@ menuButton.addEventListener('click', () => {
 closeMenuButton.addEventListener('click', () => {
   menuOverlay.classList.add('hidden');
 });
+
