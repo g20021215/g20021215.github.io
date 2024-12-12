@@ -31,9 +31,12 @@ header h1 a {
   background-color: #444;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px; /* 调整padding，适配小屏幕 */
   cursor: pointer;
   font-size: 1rem;
+  max-width: 100px; /* 确保按钮不会超出边界 */
+  text-align: center;
+  overflow: hidden; /* 防止内容溢出 */
 }
 
 #menu-button:hover {
@@ -70,7 +73,7 @@ header h1 a {
 }
 
 #menu-overlay nav ul li {
-  margin: 15px 15px;
+  margin: 10px 0; /* 调整间距，避免过多外边距导致溢出 */
 }
 
 #menu-overlay nav ul li a {
@@ -125,7 +128,7 @@ main {
   }
 
   #menu-button {
-    padding: 8px 16px;
+    padding: 8px 12px; /* 适配小屏幕 */
     font-size: 0.9rem;
   }
 
