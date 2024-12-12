@@ -89,14 +89,15 @@ header h1 a {
 
 /* Main Content */
 main {
-  padding: 100px 20px 0; /* Ensure it doesn't overlap with the header */
+  padding-top: 120px; /* Ensure CVD is not covered by the header */
   text-align: center;
 }
 
 #cvd-title {
   font-family: Garamond, sans-serif;
   font-size: 72px;
-  margin-bottom: 30px;
+  margin-top: 50px; /* Add extra space from the header */
+  margin-bottom: 30px; /* Ensure space below the title */
 }
 
 #description-box {
