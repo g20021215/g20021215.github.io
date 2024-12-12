@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling for better UX */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -15,14 +15,17 @@ header {
   background-color: #333;
   color: white;
   padding: 10px 20px;
-  position: fixed; /* Fix header at the top */
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 a {
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #menu-button {
@@ -31,6 +34,7 @@ header h1 a {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 #menu-button:hover {
@@ -92,29 +96,33 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Push content to bottom of viewport */
+  justify-content: flex-end; /* Push content down */
   align-items: center;
 }
 
+/* CVD Title */
 #cvd-title {
   font-family: Garamond, sans-serif;
   font-size: 72px;
-  margin-bottom: 30px; /* Add space below the title */
-  position: relative;
-  top: 60%; /* Move to 2/3 height */
+  position: absolute;
+  top: 65%; /* Align at 2/3 height */
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* Description Box */
 #description-box {
   width: 60%; /* Restrict width */
-  max-width: 800px; /* Add a max width */
+  max-width: 800px;
   aspect-ratio: 2 / 1; /* Maintain 2:1 ratio */
-  margin: 0 auto; /* Center horizontally */
+  margin-top: 20px;
   padding: 20px;
-  border: 1px solid #ddd; /* Add a border for clarity */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center; /* Center text */
-  align-items: center; /* Center text */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center-align text */
 }
 
 #description-box p {
@@ -124,27 +132,9 @@ main {
   color: black;
 }
 
-/* Scroll-to-Top Button */
-#scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none; /* Initially hidden */
-  z-index: 1000;
-}
-
-#scroll-top:hover {
-  background-color: #555;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  header h1 {
+  header h1 a {
     font-size: 1.2rem;
   }
 
@@ -155,6 +145,7 @@ main {
 
   #cvd-title {
     font-size: 48px;
+    top: 60%; /* Adjust for smaller screens */
   }
 
   #description-box {
