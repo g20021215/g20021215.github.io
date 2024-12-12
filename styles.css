@@ -108,7 +108,7 @@ main {
 
 #description-box {
   width: 60%;
-  max-width: 800px;
+  max-width: 600px;
   aspect-ratio: 2 / 1; /* Maintain 2:1 ratio */
   margin: 0 auto;
   padding: 20px;
